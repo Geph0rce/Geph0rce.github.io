@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>In me the tiger sniffs the rose</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://geph0rce.github.io/"/>
+  <updated>2018-08-01T09:37:39.719Z</updated>
+  <id>https://geph0rce.github.io/</id>
+  
+  <author>
+    <name>Roger</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://geph0rce.github.io/2018/08/01/hello-world/"/>
+    <id>https://geph0rce.github.io/2018/08/01/hello-world/</id>
+    <published>2018-08-01T09:37:39.719Z</published>
+    <updated>2018-08-01T09:37:39.719Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>使用CocoaPods创建私有库</title>
+    <link href="https://geph0rce.github.io/2018/05/11/2018-05-11-cocoapods-lib/"/>
+    <id>https://geph0rce.github.io/2018/05/11/2018-05-11-cocoapods-lib/</id>
+    <published>2018-05-11T06:43:08.545Z</published>
+    <updated>2018-08-01T11:27:17.815Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="添加私有仓库"><a href="#添加私有仓库" class="headerlink" title="添加私有仓库"></a>添加私有仓库</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ pod repo add <span class="string">'repo name'</span> <span class="string">'repo address'</span></span><br></pre></td></tr></table></figure><h4 id="创建lib"><a href="#创建lib" class="headerlink" title="创建lib"></a>创建lib</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ pod lib create <span class="string">'library name'</span></span><br></pre></td></tr></table></figure><h4 id="lint-lib"><a href="#lint-lib" class="headerlink" title="lint lib"></a>lint lib</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ pod lib lint</span><br><span class="line"></span><br><span class="line">      Validates the Pod using the files <span class="keyword">in</span> the working directory.</span><br></pre></td></tr></table></figure><h4 id="lint-spec"><a href="#lint-spec" class="headerlink" title="lint spec"></a>lint spec</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ pod spec lint [NAME.podspec|DIRECTORY|http://PATH/NAME.podspec ...]</span><br><span class="line"></span><br><span class="line">      Validates `NAME.podspec`. If a `DIRECTORY` is provided, it validates the</span><br><span class="line">      podspec files found, including subfolders. In <span class="keyword">case</span> the argument is</span><br><span class="line">      omitted, it defaults to the current working dir.</span><br></pre></td></tr></table></figure><h4 id="推送到仓库"><a href="#推送到仓库" class="headerlink" title="推送到仓库"></a>推送到仓库</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ pod repo push REPO [NAME.podspec]</span><br><span class="line"></span><br><span class="line">     Validates `NAME.podspec` or `*.podspec` <span class="keyword">in</span> the current working dir,</span><br><span class="line">     creates a directory and version folder <span class="keyword">for</span> the pod <span class="keyword">in</span> the <span class="built_in">local</span> copy of</span><br><span class="line">     `REPO` (~/.cocoapods/repos/[REPO]), copies the podspec file into the</span><br><span class="line">     version directory, and finally it pushes `REPO` to its remote.</span><br></pre></td></tr></table></figure><h4 id="tips"><a href="#tips" class="headerlink" title="tips"></a>tips</h4><p>如果Lib里面依赖了不同仓库的Pod, pod lib lint, pod spec lint 的时候需要添加 –sources 参数</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pod lib lint pod.podspec --sources=https://github.com/CocoaPods/Specs.git,192.168.0.100/CocoaPods/Specs.git</span><br></pre></td></tr></table></figure><p>可以在~/.bash_profile 定义函数来省去重复的输入</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="function"><span class="title">podlint</span></span>() &#123; pod <span class="variable">$@</span> lint --sources=https://github.com/CocoaPods/Specs.git,192.168.0.100/CocoaPods/Specs.git; &#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="function"><span class="title">podpush</span></span>() &#123; pod repo push <span class="variable">$@</span> --sources=https://github.com/CocoaPods/Specs.git,192.168.0.100/CocoaPods/Specs.git; &#125;</span><br></pre></td></tr></table></figure><p>使用方式</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">podlint lib</span><br><span class="line"></span><br><span class="line">podlint spec</span><br><span class="line"></span><br><span class="line">podpush pod.spec</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;添加私有仓库&quot;&gt;&lt;a href=&quot;#添加私有仓库&quot; class=&quot;headerlink&quot; title=&quot;添加私有仓库&quot;&gt;&lt;/a&gt;添加私有仓库&lt;/h4&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutt
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Git Tips</title>
+    <link href="https://geph0rce.github.io/2017/12/14/2017-12-15-git-tips/"/>
+    <id>https://geph0rce.github.io/2017/12/14/2017-12-15-git-tips/</id>
+    <published>2017-12-14T10:56:09.000Z</published>
+    <updated>2018-08-01T11:30:14.289Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="撤销暂存区修改"><a href="#撤销暂存区修改" class="headerlink" title="撤销暂存区修改"></a>撤销暂存区修改</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset HEAD &lt;file_name&gt;</span><br></pre></td></tr></table></figure><h3 id="撤销commit"><a href="#撤销commit" class="headerlink" title="撤销commit"></a>撤销commit</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset &lt;commit_ref&gt;</span><br></pre></td></tr></table></figure><h3 id="撤销commit并放弃当前修改"><a href="#撤销commit并放弃当前修改" class="headerlink" title="撤销commit并放弃当前修改"></a>撤销commit并放弃当前修改</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset --hard &lt;commit_ref&gt;</span><br></pre></td></tr></table></figure><h3 id="discard工作区文件修改"><a href="#discard工作区文件修改" class="headerlink" title="discard工作区文件修改"></a>discard工作区文件修改</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -- &lt;file_name&gt;</span><br></pre></td></tr></table></figure><h3 id="Remove-all-untracked-files-and-directories"><a href="#Remove-all-untracked-files-and-directories" class="headerlink" title="Remove all untracked files and directories."></a>Remove all untracked files and directories.</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clean -fd</span><br></pre></td></tr></table></figure><h3 id="rebase-from-upstream"><a href="#rebase-from-upstream" class="headerlink" title="rebase from upstream"></a>rebase from upstream</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git pull --rebase upstream &lt;branch_name&gt;</span><br><span class="line">git push origin &lt;branch_name&gt; -f</span><br></pre></td></tr></table></figure><h3 id="tags"><a href="#tags" class="headerlink" title="tags"></a>tags</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git tag <span class="string">'0.1.0'</span></span><br><span class="line">git push --tags</span><br><span class="line">git tag -d tag</span><br><span class="line">git push origin --delete tag 0.1.2</span><br></pre></td></tr></table></figure><h3 id="branch"><a href="#branch" class="headerlink" title="branch"></a>branch</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//删除本地分支</span><br><span class="line">git branch -d &lt;branch_name&gt;</span><br><span class="line">//删除远程分支</span><br><span class="line">git push origin --delete &lt;branch_name&gt;</span><br></pre></td></tr></table></figure><h3 id="sync-origin-branch-from-upstream"><a href="#sync-origin-branch-from-upstream" class="headerlink" title="sync origin branch from upstream"></a>sync origin branch from upstream</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git fetch upstream</span><br><span class="line">git checkout -b &lt;branch_name&gt; upstream/&lt;branch_name&gt;</span><br><span class="line">git push -u origin &lt;branch_name&gt;</span><br></pre></td></tr></table></figure><h3 id="cherry-pick-用于把另一个本地分支的commit修改应用到当前分支"><a href="#cherry-pick-用于把另一个本地分支的commit修改应用到当前分支" class="headerlink" title="cherry-pick 用于把另一个本地分支的commit修改应用到当前分支"></a>cherry-pick 用于把另一个本地分支的commit修改应用到当前分支</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git cherry-pick commit-ref</span><br></pre></td></tr></table></figure><h3 id="gitignore-应用于已经存在的文件"><a href="#gitignore-应用于已经存在的文件" class="headerlink" title=".gitignore 应用于已经存在的文件"></a>.gitignore 应用于已经存在的文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git rm -r --cached .</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">".gitignore is now working"</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;撤销暂存区修改&quot;&gt;&lt;a href=&quot;#撤销暂存区修改&quot; class=&quot;headerlink&quot; title=&quot;撤销暂存区修改&quot;&gt;&lt;/a&gt;撤销暂存区修改&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
