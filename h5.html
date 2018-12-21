@@ -15,7 +15,8 @@ function setupWebViewJavascriptBridge(callback) {
 
 setupWebViewJavascriptBridge(function(bridge) {
 	bridge.callHandler('ajkGetChatID', {'key':'value'}, function responseCallback(responseData) {
-		alert("ajkGetChatID JS received response:", responseData);
+		var msg = "ajkGetChatID JS received response:" + responseData;
+		alert(msg);
 	})
 })
 </script>
