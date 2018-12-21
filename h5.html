@@ -18,6 +18,12 @@ setupWebViewJavascriptBridge(function(bridge) {
 		var msg = "ajkGetChatID JS received response:" + responseData;
 		alert(msg);
 	})
+	
+	bridge.callHandler('ajkGetChatToken', {'key':'value'}, function responseCallback(responseData) {
+		var msg = "ajkGetChatToken JS received response:" + responseData;
+		alert(msg);
+	})
+
 })
 </script>
 </head>
