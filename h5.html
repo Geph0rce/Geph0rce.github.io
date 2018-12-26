@@ -15,7 +15,7 @@ function setupWebViewJavascriptBridge(callback) {
 
 setupWebViewJavascriptBridge(function(bridge) {
 	
-	bridge.callHandler('openNewRedPacket', 3, function responseCallback(responseData) {
+	bridge.callHandler('openCommunitySearch', 3, function responseCallback(responseData) {
 		var msg = "ajkGetChatToken JS received response:" + responseData;
 	})
 
