@@ -15,7 +15,7 @@ function setupWebViewJavascriptBridge(callback) {
 
 setupWebViewJavascriptBridge(function(bridge) {
 	
-	bridge.callHandler('openCommunitySearch', 3, function responseCallback(responseData) {
+	bridge.callHandler('ajkGetChatInfo', 3, function responseCallback(responseData) {
 		var msg = "ajkGetChatToken JS received response:" + responseData;
 		alert(msg)
 	})
